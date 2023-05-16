@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5주차 과제/계산기 만들기</title>
+    
+    <script src="./계산기만들기.js"></script>
+
+    <style>
+        table{
+            width: 23%;
+            height:500px;
+            background-color: black;
+            
+        }
+
+        td{
+            color: white;
+            padding:15px;
+            text-align: center;
+        }
+        
+        .es{
+            background-color: orange;
+        }
+
+        .es2{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td colspan="4" id="result"></td>
+        </tr>
+
+        <tr>
+            <td onclick="reset()" class="es2">AC</td>
+            <td colspan="1" class="es2"></td>
+            <td onclick="calculatePercent()" class="es2">%</td>
+            <td onclick="add('/')" class="es">/</td>
+        <tr>
+            <td onclick="add(7)">7</td>
+            <td onclick="add(8)">8</td>
+            <td onclick="add(9)">9</td>
+            <td onclick="add('*')" class="es">*</td>
+        </tr>
+
+        <tr>
+            <td onclick="add(4)">4</td>
+            <td onclick="add(5)">5</td>
+            <td onclick="add(6)">6</td>
+            <td onclick="add('-')" class="es">-</td>
+        </tr> 
+
+        <tr>
+            <td onclick="add(1)">1</td>
+            <td onclick="add(2)">2</td>
+            <td onclick="add(3)">3</td>
+            <td onclick="add('+')" class="es">+</td>
+        </tr>
+
+        <tr>
+            <td colspan="2" onclick="add(0)">0</td>
+            <td onclick="add('.')">.</td>
+            <td onclick="calculate()" class="es">=</td>
+        </tr>
+
+
+    </table>
+</body>
+</html>
