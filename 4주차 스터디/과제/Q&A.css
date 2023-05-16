@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'DM Serif Display', serif;
+    background-color: black;
+}
+
+.container{
+    width: 600px;
+    margin: auto;
+}
+
+.hd{
+    position: relative;
+    height: auto;
+    text-align: center;
+    background-color: black;
+}
+
+.hd-title{
+    font-size: 40px;
+    font-weight: lighter;
+    margin-bottom: 0px;
+    color: white;
+    background-color: black;
+    padding-top: 20px;
+    text-decoration: none;
+}
+
+/* 이미지 크기 조정하기 */
+.image{
+    width: 100%;
+    margin-left: px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    top: ;
+}
+
+
+.ft{
+    margin:0px;
+    font-size: 12.2px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-bottom: 50px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+}
+
+.ft {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.ft .container {
+  flex: 1;
+  white-space: nowrap;
+}
+
+.ft .container p {
+  margin: 0;
+}
+
+.ft {
+    position: relative;
+    padding-top: 10px;
+  }
+  
+.ft::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 80%;
+    height: 1px;
+    background-color:white;
+
+    transform: translateX(-50%);
+    left: 50%;
+  }
+
+  .ft span {
+    display: inline-block;
+    margin-bottom: 0px;
+  }
+
+  .ft span:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 1px;
+    height: 15px;
+    margin: 5px;
+    background-color: gray
+  }
