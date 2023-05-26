@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>투두리스트</title>
+</head>
+
+<body>
+    <div class="hd-title">
+        <h1>To Do List</h1>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    </div>
+
+    <form class="container">
+        <input id="input" type="text">
+        <button onclick="addTodo(event)"" type="button">+</button> 
+    </form>
+    
+    <div class="content">
+        <ul>
+        </ul>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+    </div>  
+
+    <script src="./todolist.js"></script>
+</body>
+
+<style>
+
+body{
+    background-image: url(./스크린샷\ 2023-05-21\ 오후\ 2.32.08.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    background-position: top;
+    font-family: 'Gaegu', cursive;
+}
+
+.hd-title{
+    text-align: center;
+    margin-left: 40px;
+    font-family: 'Pangolin', cursive;
+    
+}
+
+.container{
+    text-align: center;
+    list-style: none;
+    margin-left: 40px;
+    display: flex;
+    margin-left: 735px;
+    height: 40px;
+  
+    
+}
+
+
+.content{
+    text-align: center;
+    display: flex;
+    margin-left: 720px;
+    font-size: 24px;
+}
+
+li.completed {
+  text-decoration: line-through;
+}
+
+/* 버튼에 텍스트 css로 집어넣어서 분리하기, 문제해결 */
+.delbutton-text::before { 
+  content: "삭제";
+}
+.editbutton-text::before {
+  content: "수정";
+}
+
+
+
+</style>
+</html>
